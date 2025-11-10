@@ -5,7 +5,7 @@ To study and implement aggregate functions, GROUP BY, and HAVING clause with sui
 
 ## THEORY
 
-### Aggregate Functions
+### Aggregate Functions 
 These perform calculations on a set of values and return a single value.
 
 - **MIN()** – Smallest value  
@@ -38,124 +38,25 @@ HAVING condition;
 
 **Question 1**
 --
--- Paste Question 1 here
+<img width="1213" height="576" alt="Screenshot 2025-10-31 105152" src="https://github.com/user-attachments/assets/61218741-0fa9-424e-babb-a1338c6d3918" />
+
 
 ```sql
--- Paste your SQL code below for Question 1
+select Specialty,Gender,COUNT(*) as TotalDoctors
+from Doctors
+group by Specialty,Gender;
 ```
 
 **Output:**
 
-![Output1](output.png)
+<img width="1231" height="693" alt="Screenshot 2025-10-31 105210" src="https://github.com/user-attachments/assets/21b9f9cc-7bb3-4d7c-b833-79033eb39431" />
+
 
 **Question 2**
 ---
--- Paste Question 2 here
+<img width="1212" height="600" alt="Screenshot 2025-10-31 105550" src="https://github.com/user-attachments/assets/86c8ce4f-592d-4c55-8a5c-2249e832b0c6" />
+
 
 ```sql
--- Paste your SQL code below for Question 2
-```
-
-**Output:**
-
-![Output2](output.png)
-
-**Question 3**
----
--- Paste Question 3 here
-
-```sql
--- Paste your SQL code below for Question 3
-```
-
-**Output:**
-
-![Output3](output.png)
-
-**Question 4**
----
--- Paste Question 4 here
-
-```sql
--- Paste your SQL code below for Question 4
-```
-
-**Output:**
-
-![Output4](output.png)
-
-**Question 5**
----
--- Paste Question 5 here
-
-```sql
--- Paste your SQL code below for Question 5
-```
-
-**Output:**
-
-![Output5](output.png)
-
-**Question 6**
----
--- Paste Question 6 here
-
-```sql
--- Paste your SQL code below for Question 6
-```
-
-**Output:**
-
-![Output6](output.png)
-
-**Question 7**
----
--- Paste Question 7 here
-
-```sql
--- Paste your SQL code below for Question 7
-```
-
-**Output:**
-
-![Output7](output.png)
-
-**Question 8**
----
--- Paste Question 8 here
-
-```sql
--- Paste your SQL code below for Question 8
-```
-
-**Output:**
-
-![Output8](output.png)
-
-**Question 9**
----
--- Paste Question 9 here
-
-```sql
--- Paste your SQL code below for Question 9
-```
-
-**Output:**
-
-![Output9](output.png)
-
-**Question 10**
----
--- Paste Question 10 here
-
-```sql
--- Paste your SQL code below for Question 10
-```
-
-**Output:**
-
-![Output10](output.png)
-
-
-## RESULT
-Thus, the SQL queries to implement aggregate functions, GROUP BY, and HAVING clause have been executed successfully.
+select Specialty,COUNT(*) as TotalDocto
+from Doctors
